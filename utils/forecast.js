@@ -1,6 +1,5 @@
 // Third-party modules:
 const request = require('request');
-const { urlencoded } = require('express');
 
 const ACCESS_KEY = 'f0e16ba1c14b8281bc3f39a21b50d172';
 
