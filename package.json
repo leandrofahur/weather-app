@@ -1,0 +1,29 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "[![LinkedIn][linkedin-brand]][linkedin-profile-url] [![Gmail][gmail-brand]][mailto-profile] [![Facebook][facebook-brand]][facebook-profile-url] [![Instagram][instagram-brand]][instagram-profile-url]",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leandrofahur/weather-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leandrofahur/weather-app/issues"
+  },
+  "homepage": "https://github.com/leandrofahur/weather-app#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
