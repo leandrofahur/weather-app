@@ -17,7 +17,7 @@ app.use(express.static(path.join(__dirname, '..', 'public')))
 
 // Display app:
 app.get('/', (req, res) => {
-  res.send('Sanity check...')
+  res.render('index');
 })
 
 // Request to your api:
