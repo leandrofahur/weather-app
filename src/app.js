@@ -59,26 +59,12 @@ app.get('/weather', (req, res) => {
 
 // Handle error in uri:
 app.get('/*', (req, res) => {
-  res.send('404')
+  res.render('404', {
+    aboutTag: "",
+    contactTag: ""
+  });
 })
 
 app.listen(port, () => {
   console.log(`Server is up and running on port ${port}`);
 })
-
-
-
-
-
-
-
-
-
-
-
-// forecast('Surrey', 'British Columbia', (err, res) => {
-//   if(err) {
-//     return console.log(err);
-//   }
-//   console.log(res);
-// })
