@@ -2,6 +2,8 @@ const city = document.getElementById('city');
 const country = document.getElementById('country');
 const displayLocation = document.getElementById('displayLocation');
 const displayDate = document.getElementById('displayDate');
+const displayIcon = document.getElementById('displayIcon');
+const displayTemperature = document.getElementById('displayTemperature');
 const searchBtn = document.getElementById('searchBtn');
 
 dateArray = [];
@@ -23,8 +25,12 @@ window.onload = () => {
       response.json().then(data => {
         if(data.error) {
           console.log(data.error);
+          displayTemperature.textContent = `-°C`;
+          displayIcon.setAttribute('src', '/');
         } else {
           console.log(data);
+          displayTemperature.textContent = `${data.temperature}°C`;
+          displayIcon.setAttribute('src', data.weatherIcon);
         }
       })
     });
