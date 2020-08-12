@@ -18,7 +18,7 @@ a {
 /* Utilities */
 .container {
   margin: auto;
-  max-width: 1100px;
+  max-width: 600px;
   overflow: auto;
   padding: 0 20px;
 }
@@ -125,7 +125,7 @@ a {
 #location-content {
   background-color: #8b9dc3;
   padding: 30px 0;
-  height: 800px;
+  height: 634px;
 }
 
 #location-content .location-info p {
@@ -165,7 +165,7 @@ a {
 
 #about-content .about-info {
   background-color: #dfe3ee;
-  height: 800px;
+  height: 634px;
 }
 
 #about-content .about-info .bellow p {
@@ -186,7 +186,7 @@ a {
 /* Contact */
 #contact-content .contact-info{
   background-color: #dfe3ee;
-  height: 800px;
+  height: 634px;
 }
 
 
