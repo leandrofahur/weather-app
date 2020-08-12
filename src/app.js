@@ -22,11 +22,24 @@ hbs.registerPartials(path.join(__dirname, '..', 'templates', 'partials'));
 
 // Display app:
 app.get('/', (req, res) => {
-  res.render('index');
+  res.render('index', {
+    aboutTag: "",
+    contactTag: ""
+  });
 })
 
 app.get('/about', (req, res) => {
-  res.render('about');
+  res.render('about', {
+    aboutTag: "current",
+    contactTag: ""
+  });
+})
+
+app.get('/contact', (req, res) => {
+  res.render('contact', {
+    aboutTag: "",
+    contactTag: "current"
+  });
 })
 
 // Request to your api:
