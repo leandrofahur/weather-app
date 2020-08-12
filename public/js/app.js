@@ -11,7 +11,6 @@ dateArray = new Date().toString().split(' ');
 
 displayDate.textContent = `${dateArray[2]} ${dateArray[1]} ${dateArray[3]}`;
 // displayLocation.textContent = `Surrey, British Columbia`;
-displ
 
 window.onload = () => {
   searchBtn.addEventListener('click', (evt) => {
