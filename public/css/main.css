@@ -179,7 +179,14 @@ a {
 }
 
 #about-content .about-info .bellow {
+  background-color: #dfe3ee;
   padding: 70px 0;
+}
+
+/* Contact */
+#contact-content .contact-info{
+  background-color: #dfe3ee;
+  height: 800px;
 }
 
 
