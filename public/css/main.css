@@ -39,6 +39,25 @@ a {
   background-color: #8b9dc3;
 }
 
+.clr {
+  clear: both;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #3b5998;
+  border: none;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #333;
+}
+
 /* Navbar */
 #navbar {
   background-color: #3b5998;
@@ -80,20 +99,59 @@ a {
   width: 50%;
   height: 200px;
   padding-top: 80px;
-  background-color: #aaa;
+  background-color: #dfe3ee	;
 }
 
 #weather-content .content-right {
   float: right;
   width: 50%;
   height: 200px;
-  background-color: #3b5998;
+}
+
+#weather-content .content-right img {
+  display: block;
+  width: 200px;
+  margin: auto;
 }
 
 #weather-content .content-left h1 {
   font-size: 60px;
   color: #333;
   text-align: center;
+}
+
+/* Location */
+#location-content {
+  background-color: #8b9dc3;
+  padding: 30px 0;
+  height: 500px;
+}
+
+#location-content .location-info p {
+  color: #333;
+  text-align: center;
+  font-size: 30px;
+}
+
+#location-content .form-content {
+  text-align: center;
+}
+
+#location-content .form-content .form-group label{
+  display: block;
+  color: #333;
+}
+
+#location-content .form-content .form-group input {
+  padding: 5px 5px;
+  border-radius: 5px;
+  border: none;
+  width: 70%;
+  margin-top: 10px;
+}
+
+#location-content .form-content .form-group input:focus{
+  outline: none;
 }
 
 /* Footer */
