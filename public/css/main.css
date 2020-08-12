@@ -110,8 +110,9 @@ a {
 
 #weather-content .content-right img {
   display: block;
-  width: 200px;
+  width: 150px;
   margin: auto;
+  padding-top: 25px;
 }
 
 #weather-content .content-left p {
@@ -153,6 +154,34 @@ a {
 #location-content .form-content .form-group input:focus{
   outline: none;
 }
+
+/* About */
+#about-content img {
+  display: block;
+  margin: auto;
+  width: 50%;
+  border-radius: 50%;
+} 
+
+#about-content .about-info {
+  background-color: #dfe3ee;
+  height: 800px;
+}
+
+#about-content .about-info .bellow p {
+  text-align: center;
+  font-size: 21px;
+}
+
+#about-content .about-info .upper {
+  padding: 20px 0;
+  background-color: #8b9dc3;
+}
+
+#about-content .about-info .bellow {
+  padding: 70px 0;
+}
+
 
 /* Footer */
 #main-footer {

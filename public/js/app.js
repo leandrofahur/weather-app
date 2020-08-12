@@ -10,14 +10,12 @@ dateArray = [];
 dateArray = new Date().toString().split(' ');
 
 displayDate.textContent = `${dateArray[2]} ${dateArray[1]} ${dateArray[3]}`;
-displayLocation.textContent = `Surrey, British Columbia`;
+// displayLocation.textContent = `Surrey, British Columbia`;
+displ
 
 window.onload = () => {
   searchBtn.addEventListener('click', (evt) => {
     evt.preventDefault();    
-    displayLocation.textContent = `${city.value}, ${country.value}`;
-    displayDate.textContent = `${dateArray[2]} ${dateArray[1]} ${dateArray[3]}`;
-
     fetch(`/weather?city=${city.value}&country=${country.value}`).then(response => {
       if(response.error) {
         return console.log(response.error);
@@ -28,7 +26,9 @@ window.onload = () => {
           displayTemperature.textContent = `-°C`;
           displayIcon.setAttribute('src', '/');
         } else {
-          console.log(data);
+          // console.log(data);
+          displayLocation.textContent = `${city.value}, ${country.value}`;
+          displayDate.textContent = `${dateArray[2]} ${dateArray[1]} ${dateArray[3]}`;
           displayTemperature.textContent = `${data.temperature}°C`;
           displayIcon.setAttribute('src', data.weatherIcon);
         }
