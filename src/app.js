@@ -25,6 +25,10 @@ app.get('/', (req, res) => {
   res.render('index');
 })
 
+app.get('/about', (req, res) => {
+  res.render('about');
+})
+
 // Request to your api:
 app.get('/weather', (req, res) => {
   const city = req.query.city;
