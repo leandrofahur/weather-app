@@ -23,34 +23,34 @@ hbs.registerPartials(path.join(__dirname, '..', 'templates', 'partials'));
 // Display app:
 app.get('/', (req, res) => {
   res.render('index', {
-    aboutTag: "",
-    contactTag: ""
+    homeTag: "current",
+    aboutTag: ""
   });
 })
 
 app.get('/about', (req, res) => {
   res.render('about', {
-    aboutTag: "current",
-    contactTag: ""
+    homeTag: "",
+    aboutTag: "current"
   });
 })
 
-app.get('/contact', (req, res) => {
-  res.render('contact', {
-    aboutTag: "",
-    contactTag: "current"
-  });
-})
+// app.get('/contact', (req, res) => {
+//   res.render('contact', {
+//     aboutTag: "",
+//     contactTag: "current"
+//   });
+// })
 
 // Request to your api:
 app.get('/weather', (req, res) => {
   const city = req.query.city;
   const country = req.query.country;
-  if(!city || !country) {
-    return res.send({error: 'The address is required'});
+  if (!city || !country) {
+    return res.send({ error: 'The address is required' });
   }
   forecast(city, country, (err, data) => {
-    if(err) {
+    if (err) {
       return res.send(err);
     }
     res.status(200).send(data);
