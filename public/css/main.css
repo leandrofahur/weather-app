@@ -28,7 +28,7 @@ a {
 .container {
   margin: auto;
   max-width: var(--max-width);
-  overflow: auto;
+  /* overflow: auto; */
   padding: 0 20px;
 }
 
@@ -71,6 +71,49 @@ header {
   color: var(--dark-color);
 }
 
+/* Weather */
+#weather .weather-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: .3rem;  
+  padding: .5rem 1rem;
+  height: 100%;
+}
+
+#weather .weather-container > div {
+  text-align: center;
+  background-color: var(--light-color);
+}
+
+#weather .weather-container > div:first-child {
+  text-align: center;
+}
+
+#weather .weather-container img {
+  display: block;
+  margin: auto;
+  width: 200px; 
+}
+
+#weather .weather-container .data {
+  display: block;
+  margin: auto;
+  background-color: #fff;
+  /* height: 100%; */
+  width: 100%;
+  font-size: 70px;
+  font-weight: 400;
+}
+
+#weather .weather-container > div:last-child {
+  grid-column: 1 / span 2;
+}
+
+#weather .weather-container .info {
+  text-align: center;
+  padding: .5rem 0;
+}
+
 /* Footer */
 .main-footer {
   background-color: var(--dark-color);
@@ -95,6 +138,11 @@ header {
 .main-footer .social a {
   margin-left: .5rem;
   color: #fff;
+}
+
+.main-navbar .logo i:hover,
+.main-footer .social a:hover {
+  color: var(--primary-color);
 }
 
 

@@ -12,6 +12,32 @@
 <body id="home">
   {{>header}}
 
+  <main>
+    <section id="weather">
+      <div class="weather-container">
+        <div class="data">
+          <p id="displayTemperature">20°</p>
+        </div>
+        <div class="icon">
+          <img src="./img/favicon.png" alt="" id="displayIcon">
+        </div>
+        <div class="info">
+          <form>
+            <div class="form-group">
+              <label for="city"></label>
+              <input type="text" name="city" id="city" placeholder="Enter city name">
+            </div>
+            <div class="form-group">
+              <label for="country"></label>
+              <input type="text" name="country" id="country" placeholder="Enter country name">
+            </div>
+          </form>
+          <a href="" class="btn btn-prymary">Search</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
   {{!-- <section id="weather-content">
     <div class="content-left">
       <p id="displayTemperature"></p>
@@ -20,8 +46,6 @@
       <img src="" alt="weather icon" id="displayIcon">
     </div>
   </section>
-
-  <div class="clr"></div>
 
   <section id="location-content">
     <div class="container">
