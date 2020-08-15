@@ -71,5 +71,30 @@ header {
   color: var(--dark-color);
 }
 
+/* Footer */
+.main-footer {
+  background-color: var(--dark-color);
+  color: #fff;
+  display: grid;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 140px;
+}
+
+.main-footer > div {
+  text-align: center;
+  padding: 1rem;
+}
+
+.main-footer .social {
+  padding-top: 1.5rem;
+}
+
+.main-footer .social a {
+  margin-left: .5rem;
+  color: #fff;
+}
 
 
