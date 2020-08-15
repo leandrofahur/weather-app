@@ -14,18 +14,18 @@ displayDate.textContent = `${dateArray[2]} ${dateArray[1]} ${dateArray[3]}`;
 
 window.onload = () => {
   searchBtn.addEventListener('click', (evt) => {
-    evt.preventDefault();    
+    evt.preventDefault();
     fetch(`/weather?city=${city.value}&country=${country.value}`).then(response => {
-      if(response.error) {
+      if (response.error) {
         return console.log(response.error);
       }
       response.json().then(data => {
-        if(data.error) {
+        if (data.error) {
           console.log(data.error);
           displayTemperature.textContent = `-°C`;
           displayIcon.setAttribute('src', '/');
         } else {
-          // console.log(data);
+          console.log(data);
           displayLocation.textContent = `${city.value}, ${country.value}`;
           displayDate.textContent = `${dateArray[2]} ${dateArray[1]} ${dateArray[3]}`;
           displayTemperature.textContent = `${data.temperature}°C`;

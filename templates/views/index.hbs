@@ -15,6 +15,45 @@
   <main>
     <section id="weather">
       <div class="weather-container">
+        <div class="temperature">
+          <i class="fas fa-thermometer-half fa-3x"></i>
+          <h1 class="" id="displayTemperature">-˚C</h1>
+        </div>
+        <div class="location">
+          <h1 id="displayLocation">Surrey, British Columbia</h1>
+          <h3 id="displayDate">
+          </h3>
+        </div>
+        <div class="icon">
+          <img src="./img/favicon.png" alt="" id="displayIcon">
+        </div>
+        <div class="info">
+          <form>
+            <div class="form-group">
+              <label for="city"></label>
+              <input type="text" name="city" id="city" placeholder="Enter city name">
+            </div>
+            <div class="form-group">
+              <label for="country"></label>
+              <input type="text" name="country" id="country" placeholder="Enter country name">
+            </div>
+            <input type="submit" id="searchBtn">
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  {{>footer}}
+  <script src="./js/app.js"></script>
+</body>
+
+</html>
+
+
+{{!-- <main>
+    <section id="weather">
+      <div class="weather-container">
         <div class="weather-grid">
           <div class="data">
             <p id="displayTemperature"></p>
@@ -43,67 +82,4 @@
 
       </div>
     </section>
-  </main>
-
-  {{!-- <main>
-    <section id="weather">
-      <div class="weather-container">
-        <div class="data">
-          <p id="displayTemperature">20°</p>
-        </div>
-        <div class="icon">
-          <img src="./img/favicon.png" alt="" id="displayIcon">
-        </div>
-        <div class="info">
-          <form>
-            <div class="form-group">
-              <label for="city"></label>
-              <input type="text" name="city" id="city" placeholder="Enter city name">
-            </div>
-            <div class="form-group">
-              <label for="country"></label>
-              <input type="text" name="country" id="country" placeholder="Enter country name">
-            </div>
-          </form>
-          <a href="" class="btn btn-prymary">Search</a>
-        </div>
-      </div>
-    </section>
   </main> --}}
-
-  {{!-- <section id="weather-content">
-    <div class="content-left">
-      <p id="displayTemperature"></p>
-    </div>
-    <div class="content-right">
-      <img src="" alt="weather icon" id="displayIcon">
-    </div>
-  </section>
-
-  <section id="location-content">
-    <div class="container">
-      <div class="location-info">
-        <p class="py-3" id="displayLocation"></p>
-        <p class="py-3" id="displayDate"></p>
-      </div>
-      <div class="form-content py-3">
-        <form action="">
-          <div class="form-group py-2">
-            <label for="city">City</label>
-            <input type="text" name="city" id="city">
-          </div>
-          <div class="form-group py-3">
-            <label for="country">Country</label>
-            <input type="text" name="country" id="country">
-          </div>  
-          <button type="button" class="btn" id="searchBtn">Search</button>
-        </form>
-      </div>
-    </div>
-  </section> --}}
-
-  {{>footer}}
-  <script src="./js/app.js"></script>
-</body>
-
-</html>

@@ -73,17 +73,86 @@ header {
 
 /* Weather */
 #weather .weather-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;  
+  /* background-color: var(--light-color); */
+} 
+
+#weather .weather-container > div {
+  /* background-color: var(--light-color); */
+  /* height: 100%;
+  width: 100%; */
+}
+
+#weather .icon img {
+  width: 100%;
+  height: 100%;
+}
+
+#weather .temperature {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#weather .temperature i {
+  display: flex;
+  flex-direction: row;
+}
+
+#weather .temperature h1 {
+  font-size: 65px;
+  margin-left: .5rem;
+  margin-top: .5rem;
+}
+
+#weather .info {
+  grid-column: 1 / span 3;
+}
+
+#weather .info input[type='text'] {
+  padding: .55rem 1rem;  
+  margin-top: .75rem;
+  outline: none;
+}
+
+#weather .info input[type='submit'] {
+  padding: .75rem 1.5rem;  
+  margin-top: .75rem;
+  background-color: var(--secondary-color);
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer; 
+}
+
+#weather .info input[type='submit']:hover {
+  opacity: 0.8;
+}
+
+
+
+
+
+
+
+
+
+
+/* Weather */
+/* #weather .weather-container {
   max-width: 768px;
   margin: auto;
-  /* background-color: #f99500; */
-  /* height: 100vh; */
 }
 
 #weather .weather-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 1rem;
-  /* align-items: center; */
   text-align: center;
 }
 
@@ -156,53 +225,6 @@ header {
   font-size: 30px;
   font-weight: 400;
   padding: 20px;
-}
-
-
-
-
-
-/* #weather .weather-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: .3rem;  
-  padding: .5rem 1rem;
-  height: 100vh;
-  max-width: 768px;
-  margin: auto;
-}
-
-#weather .weather-container > div {
-  text-align: center;
-  background-color: var(--light-color);
-}
-
-#weather .weather-container > div:first-child {
-  text-align: center;
-}
-
-#weather .weather-container img {
-  display: block;
-  margin: auto;
-  width: 200px; 
-}
-
-#weather .weather-container .data {
-  display: block;
-  margin: auto;
-  background-color: #fff;
-  width: 100%;
-  font-size: 70px;
-  font-weight: 400;
-}
-
-#weather .weather-container > div:last-child {
-  grid-column: 1 / span 2;
-}
-
-#weather .weather-container .info {
-  text-align: center;
-  padding: .5rem 0;
 } */
 
 /* Footer */
