@@ -1,0 +1,25 @@
+@media(max-width: 768px) {
+  /* Weather */
+  #weather .weather-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #weather .info {
+    grid-column: 1 /span 2;
+  }
+
+  #weather .location {
+    grid-column: 1 /span 2;
+    margin-top: 10px;
+  }
+
+
+  
+
+  /* About */
+  #about .about-container .profile img {
+    width: 120px;
+    padding-top: 10px;
+  }
+}
+

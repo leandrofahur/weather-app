@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" media="screen and (max-width:768px)" href="./css/mobile.css">
   <script src="https://kit.fontawesome.com/95f2ce0fc1.js" crossorigin="anonymous"></script>
   <title>Weather App</title>
 </head>
@@ -15,15 +16,20 @@
   <main>
     <section id="weather">
       <div class="weather-container">
-        <div class="temperature">
-          <i class="fas fa-thermometer-half fa-3x"></i>
-          <h1 class="" id="displayTemperature">-˚C</h1>
-        </div>
         <div class="location">
           <h1 id="displayLocation">Surrey, British Columbia</h1>
           <h3 id="displayDate">
           </h3>
         </div>
+        <div class="temperature">
+          <i class="fas fa-thermometer-half fa-3x"></i>
+          <h1 class="" id="displayTemperature">-˚C</h1>
+        </div>
+        {{!-- <div class="location">
+          <h1 id="displayLocation">Surrey, British Columbia</h1>
+          <h3 id="displayDate">
+          </h3>
+        </div> --}}
         <div class="icon">
           <img src="./img/favicon.png" alt="" id="displayIcon">
         </div>
