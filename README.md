@@ -8,6 +8,8 @@
 
 Implement a simple Weather App.
 
+[app link](https://fahur-weather-app.herokuapp.com/)
+
 <!-- [Weather App demo](https://fahur-weather-app.herokuapp.com/) -->
 
 <!-- REFERENCE LINKS -->
